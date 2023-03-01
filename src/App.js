@@ -1,40 +1,40 @@
 import { GoBell, GoCloudDownload } from "react-icons/go";
-import Button from "./components/Button";
+import Accordion from "./components/Accordion";
+
 function App() {
+	const show = [
+		{
+			id: "ufsdh",
+			label: "how are you",
+			content:
+				"nice boy see you there. nice boy see you there nice boy see you there nice boy see you there nice boy see you there ",
+		},
+		{
+			id: "kjlahsd",
+			label: "how are you",
+			content:
+				"nice boy see you there nice boy see you there nice boy see you therenice boy see you there nice boy see you there nice boy see you there nice boy see you there",
+		},
+		{
+			id: "bjldasfk",
+			label: "how are you",
+			content:
+				"nice boy see you there nice boy see you there nice boy see you there nice boy see you there nice boy see you there nice boy see you there nice boy see you there",
+		},
+		{
+			id: "yngfadshj",
+			label: "how are you",
+			content:
+				"nice boy see you there nice boy see you there nice boy see you there nice boy see you there nice boy see you there nice boy see you there",
+		},
+	];
 	const handleClick = () => {
 		console.log(`hi there`);
 	};
 
 	return (
 		<div>
-			<div>
-				<Button className="mb-5" primary rounded outline onClick={handleClick}>
-					<GoBell />
-					SUBMIT
-				</Button>
-			</div>
-			<div>
-				<Button secondary outline onMouseEnter={handleClick}>
-					<GoBell />
-					CANCEL
-				</Button>
-			</div>
-			<div>
-				<Button success rounded outline>
-					<GoCloudDownload />
-					BUY NOW
-				</Button>
-			</div>
-			<div>
-				<Button warning rounded outline>
-					ADD TO CART
-				</Button>
-			</div>
-			<div>
-				<Button danger rounded outline>
-					ADD TO CART
-				</Button>
-			</div>
+			<Accordion lists={show} />
 		</div>
 	);
 }
