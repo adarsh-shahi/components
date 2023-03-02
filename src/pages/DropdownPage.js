@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DropDown from "../components/DropDown";
+import DropDown from "../components/Dropdown";
 function DropDownPage() {
 	const options = [
 		{ label: "Red", value: "red" },

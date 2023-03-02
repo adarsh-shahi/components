@@ -1,20 +1,16 @@
 import { GoBell, GoCloudDownload } from "react-icons/go";
 import Button from "../components/Button";
 function ButtonPage() {
-	const handleClick = () => {
-		console.log(`hi there`);
-	};
-
 	return (
 		<div>
 			<div>
-				<Button className="mb-5" primary rounded outline onClick={handleClick}>
+				<Button className="mb-5" primary rounded outline>
 					<GoBell />
 					SUBMIT
 				</Button>
 			</div>
 			<div>
-				<Button secondary outline onMouseEnter={handleClick}>
+				<Button secondary outline>
 					<GoBell />
 					CANCEL
 				</Button>
